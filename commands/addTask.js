@@ -28,3 +28,27 @@ const askQuestions = async() => {
 
   return todoArray
 }
+
+export default async function addTask() {
+  try {
+    const userResponse = await askQuestions();
+
+    await connectDB()
+
+    let spinner = ora('Creating the todos...').start()
+
+    for(let i=0; i<userResponse.length; i++) {
+      const response = userResponse[i]
+      await Todos.create(response)
+
+      spinner.stop()
+      console.log(chalk.greenBright('Todos created!'))
+
+      await disconnectDB()
+    }
+  } catch(error) {
+    'Error occured: ', error
+    process.exit(1)
+  }
+
+}
