@@ -12,6 +12,6 @@ A simple Task Manager CLI tool that uses commands to Create, View, Update, or De
 
 ## Documentation
 
-This repo makes use of this [tutorial](https://www.freecodecamp.org/news/nodejs-tutorial-build-a-task-manager-cli-tool/).
+This repo makes use of this [tutorial](https://www.freecodecamp.org/news/nodejs-tutorial-build-a-task-manager-cli-tool/) via freeCodeCamp.
 
 As this project uses MongoDB, I found this documentation for [MongoDB Atlas](https://www.freecodecamp.org/news/get-started-with-mongodb-atlas/) particularly helpful.
