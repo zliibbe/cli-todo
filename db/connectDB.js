@@ -20,7 +20,7 @@ export async function connectDB(){
 export async function disconnectDB(){
   try {
       await mongoose.disconnect()
-      console.log(chalk.greenBright('Disconnected from the database.'))
+      console.log(chalk.yellow('Disconnected from the database.'))
   } catch(err) {
       console.log(chalk.redBright('Error disconnecting from database: '), error);
       process.exit(1) 
