@@ -9,3 +9,9 @@ A simple Task Manager CLI tool that uses commands to Create, View, Update, or De
 * [inquirer](https://www.npmjs.com/package/inquirer): This lets us ask the user for input.
 
 * [ora](https://www.npmjs.com/package/ora): This makes the terminal show nice spinning animations.
+
+## Documentation
+
+This repo makes use of this [tutorial](https://www.freecodecamp.org/news/nodejs-tutorial-build-a-task-manager-cli-tool/).
+
+As this project uses MongoDB, I found this documentation for [MongoDB Atlas](https://www.freecodecamp.org/news/get-started-with-mongodb-atlas/) particularly helpful.
