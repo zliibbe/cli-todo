@@ -3,10 +3,10 @@ A simple Task Manager CLI tool that uses commands to Create, View, Update, or De
 
 Here are the commands you can use to operate the tool:
 
-* `todo add`  to create a new task.
-* `todo read` to read all your pending tasks.
+* `todo add`  to create one or multiple new tasks.
+* `todo read` to read all your existing tasks.
 * `todo update` to update a specific task.
-* `todo delete` to delete a task.
+* `todo delete` to delete a specific task.
   
 You can also use these 2 options using the tool:
 
