@@ -18,9 +18,9 @@ export default async function readTask() {
     } else {
       todos.forEach(todo => {
         console.log(
-          chalk.cyanBright(`Todo Code ${todo.code} \n`),
-          chalk.blueBright(`Name: ${todo.name} \n`),
-          chalk.yellowBright(`Description: ${todo.detail} \n`)
+          chalk.bgBlue(`code: \n ${todo.code} \n`),
+          chalk.bgWhite(`Name: ${todo.name} \n`),
+          chalk.bgWhite(`Description: ${todo.detail} \n`)
         )
       })
     }
