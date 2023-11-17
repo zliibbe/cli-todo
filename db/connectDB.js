@@ -10,7 +10,7 @@ export async function connectDB(){
       const spinner = ora('Connecting to the database...').start()
       await mongoose.connect(process.env.MONGO_URI)
       spinner.stop()
-      console.log(chalk.greenBright('Successfully connected to database!!!'))   
+      console.log(chalk.greenBright('Successfully connected to database!'))   
   } catch (error) {
       console.log(chalk.redBright('Error connecting to database: '), error);
       process.exit(1) 
