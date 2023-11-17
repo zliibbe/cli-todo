@@ -48,7 +48,6 @@ export default async function addTask() {
     }
   } catch(error) {
     console.log(chalk.red('Something went wrong adding tasks \nError: ', error))
-    // 'Error occured: ', error
     process.exit(1)
   }
 
