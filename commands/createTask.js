@@ -47,7 +47,7 @@ export default async function addTask() {
       await disconnectDB()
     }
   } catch(error) {
-    console.log(chalk.red('Something went wrong adding tasks \nError: ', error))
+    console.log(chalk.red('\nSomething went wrong adding tasks \nError: ', error))
     process.exit(1)
   }
 
