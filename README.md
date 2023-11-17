@@ -1,14 +1,14 @@
-# CLI Task Manager (todo App)
+# CLI Task Manager aka todo App
 A simple Task Manager CLI tool that uses commands to Create, View, Update, or Delete todos built using NodeJS and MongoDB as the database.
 
 ## Dependencies
-* [Commander.js](https://www.npmjs.com/package/commander): This helps us to build the CLI tool.
+* [Commander.js](https://www.npmjs.com/package/commander) helps me to build the CLI tool.
 
-* [chalk](https://www.npmjs.com/package/chalk): This makes messages in the terminal colorful and easy to read.
+* [chalk](https://www.npmjs.com/package/chalk) makes messages in the terminal colorful and easy to read.
 
-* [inquirer](https://www.npmjs.com/package/inquirer): This lets us ask the user for input.
+* [inquirer](https://www.npmjs.com/package/inquirer) lets me ask the user for input.
 
-* [ora](https://www.npmjs.com/package/ora): This makes the terminal show nice spinning animations.
+* [ora](https://www.npmjs.com/package/ora) makes the terminal show nice spinning animations.
 
 ## Documentation
 
