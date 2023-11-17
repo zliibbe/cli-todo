@@ -28,11 +28,11 @@ export default async function updateTask() {
 
     const spinner = ora('Finding the todo...').start()
 
-    const todo = await Todos.find({code: userCode.code})
+    const todo = await Todos.findOne({code: userCode.code})
 
     spinner.stop()
 
-    if(!todo) {
+    if(todo === null) {
       console.log(chalk.redBright('Could not find a Todo with the code you provided.'))
     } else {
       console.log(chalk.blueBright('Type the updated properties. Press Enter if you don\'t want to update the data.'))
@@ -58,7 +58,7 @@ export default async function updateTask() {
 
     await disconnectDB()
   } catch (error) {
-    console.log(chalk.red('Something went wrong updating tasks \nError: ', error))
+    console.log(chalk.red('\nSomething went wrong updating tasks \nError: ', error))
     process.exit(1)
   }
 }
