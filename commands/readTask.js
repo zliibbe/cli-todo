@@ -27,7 +27,7 @@ export default async function readTask() {
 
     await disconnectDB()
   } catch (error) {
-    console.log(chalk.red('Something went wrong, Error: ', error))
+    console.log(chalk.red('Something went wrong reading tasks \nError: ', error))
     process.exit(1)
   }
 }
